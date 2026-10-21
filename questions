@@ -1,0 +1,190 @@
+Question 1  - Calculate a ticket price based on age. Children under 12 pay $8, seniors 65 and older pay $10, and everyone else pays $15.
+
+Question2 -  Assign dashboard permissions based on a user's role. Admins get full access, editors can modify content, and viewers can only read.
+
+Question 3  - Traffic Light Logic
+Determine a driver's action based on the color of a traffic light. Include a fallback else to catch invalid inputs.
+
+Question 4 -  FizzBuzz (The Classic Interview Question)
+For a given number, print "Fizz" if it is divisible by 3, "Buzz" if divisible by 5, and "FizzBuzz" if divisible by both 3 and 5. Otherwise, print the number.
+
+Question5  - Shipping Cost Calculator
+Calculate delivery charges based on the weight of a package. Under 5kg costs $5, between 5kg and 20kg costs $10, and anything over 20kg costs $20.
+
+Question6 - BMI (Body Mass Index) Category
+Print a health category based on a person's BMI number.
+
+Question7 - Shopping Discount System
+Give a customer a discount based on how much they spend. $1000 or more gets a 20% discount, $500 or more gets 10%, and under $500 gets 0%
+
+Question8- Speeding Ticket Checker
+Check a driver's speed to determine their fine. Speed limit is 60.
+
+nested Questions  
+Questions 1 :   School Attendance & Exam
+Scenario: A student wants to give their final exam. First, check if their attendance is 75% or higher. If it is, then check if they have paid their exam fees.
+
+Variables to create: attendance_percentage (number) and fees_paid (boolean True/False).
+
+Task: Write a nested if-else to print if they can sit for the exam.
+
+
+Question 2 - Online Shopping Login
+Scenario: A user is trying to buy something online. First, check if they are logged into their account. If they are, check if their shopping cart has any items in it (items > 0).
+
+Variables to create: is_logged_in (boolean) and cart_items (number).
+
+Task: Write the logic to either tell them to log in, add items, or proceed to checkout.
+
+
+Question3 -  Rollercoaster Ride
+Scenario: A kid wants to ride a rollercoaster. First, they must be at least 12 years old. If they are old enough, they must also be taller than 120 cm.
+
+Variables to create: age (number) and height_cm (number).
+
+Task: Print whether they are allowed on the ride based on these two rules.
+
+Question4  Bank ATM Withdrawal
+Scenario: A person is at an ATM. First, the ATM checks if their ATM card is valid (not expired). If the card is valid, it checks if their account balance is greater than or equal to the amount they want to withdraw.
+
+Variables to create: card_valid (boolean), balance (number), and withdraw_amount (number).
+
+Task: Write the nested if-else to process the withdrawal.
+
+
+Question5 :  Build a "Smart Calculator"
+Your Task:
+Write a Python program that can add, subtract, multiply, and divide two numbers. However, your calculator must include a "Smart Guard" to prevent the program from crashing if someone tries to divide by zero!
+
+Set Up Your Variables:
+Start your code by creating these three variables at the top:
+num1 = 10
+num2 = 0
+operator = "/"
+
+Step 1: The Basic Calculator (Using if and elif)
+Write the logic for addition, subtraction, and multiplication.
+
+If the operator is "+", add the two numbers together and print the result.
+
+If the operator is "-", subtract num2 from num1 and print the result.
+
+If the operator is "*", multiply the numbers and print the result.
+
+(Hint: Use if for the first condition, and elif for the next two).
+
+Step 2: Catching Typos (Using else)
+What if someone types the wrong symbol to calculate?
+
+At the very end of your code, add a block that catches any symbol other than +, -, *, or /.
+
+If they enter a wrong symbol (like @ or ?), print: "Invalid Operator! Please choose a correct symbol."
+
+(Hint: Use an else statement at the very end of your conditions).
+
+Step 3: The Division Guard (Using Nested if)
+Now, add one more elif block to handle division ("/").
+
+The Twist: Inside this elif block, you need to create a guard (a nested if-else).
+
+The guard must check: If num2 is exactly 0, print "Error: You cannot divide a number by zero!"
+
+If num2 is NOT 0, then it is safe. Divide num1 by num2 and print the answer.
+
+
+--------------------------------------------------
+Question1  = Quiz
+The game asks a question. If you give the wrong answer (else), you lose immediately. If you give the correct answer (if), you unlock the next level and the game asks you Question 2 (nested if).
+
+
+Question2  = The Monster Fight
+A monster appears! You have 3 weapons: Sword, Bow, or Magic (if-elif). Each does different damage. But there is a catch: to use Magic, the game must first check if you have enough energy/mana (nested if).
+
+---------------------------loop questions   --------------------------
+Question1 Prime Number Checker
+Task: Check if a given number is a prime number (divisible only by 1 and itself) using a break statement.
+
+
+
+Question2 Star Pattern Builder
+Task: Create a right-angled triangle pattern using stars (*) for a given number of rows.
+ 
+Question3  : Reverse a String
+Task: Reverse a given word without using any built-in string reversing functions or slicing shortcuts.
+"PYTHON"  =  "NOHTYP 
+
+Question4 . Fibonacci Series Generator
+Task: Print the first 10 numbers of the Fibonacci series (0, 1, 1, 2, 3, 5, 8...), where each number is the sum of the two preceding ones.
+
+Question5 : Sum of Squares
+Task: Calculate the total sum of the squares of all numbers from 1 to 5 (i.e., 1^2 + 2^2 + 3^2 + 4^2 + 5^2).
+-------------------------------loop Basic Questions--------------- 
+Question1 The Even Number Jumper (Using Step)
+Task: Print all even numbers from 2 to 20 by using a "jump" or step value of 2 in the range() function.
+
+Question2 The Countdown (Negative Step)
+Task: Print a reverse countdown from 10 down to 1.
+range(1 , 11 , -1) 
+
+Question3 The Auto-Table (Multiplication)
+Task: Print the multiplication table for the number 3 using a loop.
+
+Question4 The Piggy Bank (Basic Summation)
+Task: Add up all the numbers from 1 to 5 and print the final total.
+
+
+
+Question-1 The Delivery App (Callback with Return)
+Task: Create a restaurant function that prepares food and then uses a delivery_boy callback to deliver it and return a final status.
+
+ -------------------function-------------------------------------------------
+
+The Secret Password (If-Else + Return)
+Task: Ek function check_password(word) banayein. Agar password ki lambaai (length) 8 characters se kam hai, toh False return kare, warna True return kare.
+
+The Smart Multiplier (Default Parameter)
+Task: Ek function multiply(a, b) banayein. Agar user doosra number b dena bhool jaye, toh function apne aap usko 10 maan le aur multiply karke answer print kare.
+
+The Average Scorer (List + Loop + Return)
+Task: Ek function get_average(marks) banayein jisme marks ki ek List pass ki jaye. Function sabhi marks ko jode, unka average nikale, aur answer return kare.
+
+The RTO Officer (Multiple Parameters)
+Task: Ek function check_driving(age, has_license) banayein. Agar age 18 ya usse zyada hai AUR has_license True hai, tabhi "Can Drive" print kare. Kisi bhi ek cheez ke kam hone par "Cannot Drive" print kare.
+
+The Dictionary Detective (Dict + If-Else)
+Task: Ek function banayein jisme city_temp naam ki dictionary (jaise {"Delhi": 40, "Mumbai": 35}) aur ek shahar ka naam pass kiya jaye. Agar shahar dictionary mein hai toh uska temperature bataye, nahi toh "City not found" bole.
+
+The Text Decoder (String + Loop)
+Task: Ek function remove_vowels(word) banayein. Yeh word ko check kare aur saare vowels (a, e, i, o, u) ko hatakar (ya '*' lagakar) naya word return kare.
+
+The Emoji Adder (List Updating)
+Task: Ek function jisme ek list of messages pass karein. Function For Loop lagakar har message ke end mein "😊" add kare aur nayi list wapas bheje.
+
+The VIP Discount (Return vs Print)
+Task: Ek function calculate_discount(bill) banayein. Agar bill 1000 rupaye se zyada hai, toh 10% discount kaat kar final amount return kare. Agar kam hai, toh poora amount return kare.
+
+Find the Topper (Dict + Loop)
+Task: Ek function find_topper(students) banayein jisme bacchon ke naam aur marks ki Dictionary di jaye. Function loop chala kar check kare ki sabse zyada marks kiske hain aur uska naam print kare.
+
+The Even Number Collector (List Filter)
+Task: Ek function banayein jisme ek numbers ki List daali jaye. Function ek nayi khali list banaye, usme se sirf Even (Sam) numbers nikal kar dale, aur us nayi list ko return kare.
+
+Hard Level: The Boss Stage (5 Questions)
+Yeh questions thode tricky hain jisme Callbacks, Nested logic, aur multi-step problem solving ki zaroorat padegi.
+
+The ATM System (Callback Functions)
+Task: Teen functions banayein: deposit(amount), withdraw(amount), aur ek main function atm(action_func, amount). User apni marzi se deposit ya withdraw function ko as a callback atm() ke andar bheje aur naya balance dekhe.
+
+The Word Counter (List to Dictionary)
+Task: Ek function count_words(word_list) banayein jisme ek list ho (jaise ["apple", "banana", "apple"]). Function loop ka use karke ek Dictionary return kare jisme word aur uski ginti ho (Output: {"apple": 2, "banana": 1}).
+
+The Shopping Cart Updater (List + Dict Logic)
+Task: Ek function checkout(menu, order) banayein. menu ek Dictionary hai (item: price) aur order ek List hai jo customer ne mangi hai. Function check kare ki kaun se order items menu mein available hain, unka price add kare, aur Total Bill return kare.
+
+The Magic Countdown (Recursive Function)
+Task: Ek function countdown(n) banayein jo bina for ya while loop use kiye, apne aap ko dobara call karke (Recursion) numbers ko 5 se 1 tak print kare aur end mein "Blastoff!" bole.
+
+The Secret Agent Filter (Callback in Loop)
+Task: Ek main function filter_data(data_list, rule_func) banayein. Ek doosra function is_secret(word) banayein jo check kare ki word "007" se shuru hota hai ya nahi. filter_data ke andar loop chalayein aur rule_func callback ka use karke sirf secret words ki nayi list return karein.  
+
+
